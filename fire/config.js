@@ -6,12 +6,12 @@ import { getFirestore,collection,addDoc,serverTimestamp } from 'firebase/firesto
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: ,
-  authDomain: ,
-  projectId: ,
-  storageBucket: ,
-  messagingSenderId: ,
-  appId: 
+  apiKey: process.env.APIKEY,
+  authDomain: process.env.AUTHDOMAIN,
+  projectId: process.env.PROJECTID,
+  storageBucket: process.env.STORAGEBUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDERID,
+  appId: process.env.APPID
 };
 
 // Initialize Firebase
